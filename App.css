@@ -1,0 +1,1198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+
+:root{
+  --header-height: 3rem;
+
+
+
+  /* color Mode */
+  --title-color:#f2f2f2;
+  --text-color:#f2f2f2;
+
+  /* Font */
+  --body-font:  'Montserrat', sans-serif;
+
+
+  --normal-font-size:.938rem;
+  --small-font-size:.813rem;
+
+
+  /* font weight */
+  --font-semi-bold:600;
+
+  /* margin Bottom */
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-2:2rem;
+
+
+
+}
+
+/* fontsize for larger device */
+/* @media screen and (min-width: 968px){
+  :root{
+
+    --normal-font-size:1rem;
+    --small-font-size:.875rem;
+  }
+}
+
+@media screen and (min-width: 350px){
+  :root{
+
+    --normal-font-size:1rem;
+    --small-font-size:.875rem;
+  }
+} */
+*{
+  box-sizing: border-box;
+  padding:0;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: #0D0E10;
+  color: var(--text-color);
+
+}
+
+h1,h2,h3,h4{
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+image{
+  max-width: 100%;
+}
+
+button{
+  background-color: #fff;
+  border: 0px;
+}
+
+ /* ========== survey =================== */
+
+ .survey{
+  padding: 4rem  2rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.survey-text-container{
+  margin-right: 2rem;
+  width: 34rem;
+}
+
+.subContainer{
+  justify-content: center;
+  width: 34rem;
+  margin-left: 2rem;
+  margin-top: 5rem;
+}
+
+.flex_form-container{
+  flex: 30%;
+  height: auto;
+  align-items: center;
+  /* justify-content: center; */
+  border-radius: 15px;
+  flex-direction: column;
+  border: 2px solid #344d48;
+  background-color: #17191c;
+}
+
+.form{
+  height: 25rem;
+  margin-top: 70px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  background-color: #17191c;
+  border-radius: 15px;
+
+}
+
+.container_question{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  background-color: #17191c;
+  height: 20rem;
+
+}
+
+
+.form_p{
+  font-size: 1.3rem;
+  letter-spacing: 0.6px;
+  color: #f2f2f2;
+  text-align: center;
+  background-color: #17191c;
+  width: 70%;
+}
+.input_email{
+  margin-top: 2rem;
+  margin-bottom: 15px;
+  width: 75%;
+  background-color: #f2f2f2;
+  height: 45px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  filter: brightness(95%);
+  color:#4d4d4d;
+}
+
+.icon_placeholder{
+  margin-left: 15px;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #31b493;
+  background-color: #f2f2f2;
+}
+
+.input_style{
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 380px;
+  margin-left: 20px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  color: #262626;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: #f2f2f2;
+}
+
+.icon_background{
+  background-color: #f2f2f2;
+}
+.input_style:focus{
+  border: 0px;
+  outline: 0px;
+  box-shadow: none;
+  border-color: #a8aed7;
+}
+
+.button_div{
+  display: flex;
+  align-items: center;
+
+}
+
+.button_cta{
+  background-color: white;
+  padding: 0.3rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: #fff;
+  border: 2px solid #217862;
+  background-color: #217862;
+  opacity: 0.95;
+  transition: all 0.2s;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-top: 1.5rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
+}
+
+.button_cta-goback{
+background-color: white;
+padding: 0.3rem 1.5rem;
+border-radius: 5px;
+font-size: 1.1rem;
+color: #fff;
+border: 2px solid #217862;
+background-color: #17191c;
+opacity: 0.95;
+transition: all 0.2s;
+font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 600;
+transition: 0.3s;
+margin-top: 1.5rem;
+margin-right: .5rem;
+margin-left: .5rem;
+}
+
+.button_cta:hover{
+color: #217862;
+background-color: #fff;
+}
+
+.button_cta-goback:hover{
+color: #217862;
+background-color: #fff;
+}
+
+.number{
+/* margin: 6rem 0px 0rem 28rem; */
+display: flex;
+background-color: transparent;
+color: white;
+font-size: 1.1rem;
+opacity: 60%;
+bottom: 0;
+}
+
+.container_number{
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;
+background-color: #17191c;
+
+}
+
+
+.container_error{
+margin: 10px 25px;
+  width: 80%;
+  height: 30px;
+  background-color: #17191c;
+
+}
+
+.flex_container-choice{
+display: flex;
+align-items: center;
+height: 10rem;
+background-color: #17191c;
+
+}
+
+.container_number-single_choise{
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;
+background-color: #17191c;
+margin-top: 0%;
+}
+
+.single_choice{
+width: 6rem;
+height:6rem;
+border-radius: 15px;
+margin-left: 1.5rem;
+margin-right: 1.5rem;
+background: #23252b;
+backdrop-filter: blur( 8.5px );
+-webkit-backdrop-filter: blur( 8.5px );
+border-radius: 10px;
+border: 2px solid #2e3139;
+box-shadow: 0px 0px 18px 4px rgba(69,73,83,0.6);
+transition: .3s;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.single_choice:hover{
+box-shadow: 0px 0px 18px 9px rgba(69,73,83,0.6);
+
+}
+
+.single_choice-selected{
+box-shadow: 0px 0px 18px 4px #217862;
+width: 6rem;
+height:6rem;
+border-radius: 15px;
+margin-left: 1.5rem;
+margin-right: 1.5rem;
+background: #23252b;
+backdrop-filter: blur( 8.5px );
+-webkit-backdrop-filter: blur( 8.5px );
+border-radius: 10px;
+border: 2px solid #2e3139;
+transition: .3s;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.single_choice-p{
+  background-color: #23252b;
+  font-size: var(--small-font-size);
+  color: #f2f2f2;
+  font-family: var(--body-font);
+  
+  }
+
+.single_choice-icon{
+  background-color: #23252b;
+  font-size: 1.9rem;
+  color: #f2f2f2;
+  
+  }
+
+  .flex_container-single_choice-sentence{
+    display: flex;
+    align-items: center;
+    background-color: #17191c;
+    flex-direction: column;
+    margin-bottom: 4rem;
+
+  }
+
+.radio_outer_container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #17191c;
+  width: 25rem;
+  margin-bottom: var(--mb-0-75);
+
+}
+
+.radio_container{
+  width: 21rem;
+  background-color: #17191c;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: var(--normal-font-size);
+  color: #f2f2f2;
+  font-family: var(--body-font);
+  border: 0px;
+}
+
+.radio_container-focus{
+  width: 21rem;
+  background-color: #0D0E10;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: var(--normal-font-size);
+  color: #f2f2f2;
+  font-family: var(--body-font);
+  border: 0px;
+
+}
+
+.circle_container{
+  width: 2rem;
+  background-color: #17191c;
+
+}
+
+.radio_space{
+  width: 3rem;
+  background-color: #17191c;
+
+}
+
+.circle{
+  display: flex;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: f2f2f2;
+  margin-left: .2rem;
+  margin-right: 1rem;
+  background-color: #f2f2f2;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner_circle{
+  width: 11px;
+  height: 11px;
+  border-radius: 11px;
+  background-color: #f2f2f2;
+  border: 5px solid #17191c;
+}
+
+
+.inner_circle-focus{
+  width: 11px;
+  height: 11px;
+  border-radius: 11px;
+  background-color: #217862;
+  border: 5px solid #217862;
+  }
+
+.radio_container:hover{
+  background-color: #0D0E10;
+
+}
+
+
+.input_style-open_question{
+  background-color: #0D0E10;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 20px;
+  border-radius: 8px;
+  border: none;
+  color: #f2f2f2;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0.5rem;
+  resize: none;
+
+}
+
+.input_style-open_question:focus{
+  border: 0px;
+  outline: 0px;
+  box-shadow: none;
+
+}
+
+.teminated_survey-icon{
+  background-color: #17191c;
+  font-size: 7rem;
+  color: #2da587;
+  margin-top: 2.2rem;
+}
+
+
+@media screen and (max-width: 376px){
+  .survey{
+    margin: 4rem  0rem;
+    padding: 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .survey_subtitle{
+    display: none;
+  }
+
+  .survey_container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+
+  .survey-text-container{
+    /* max-width: 500px; */
+    margin: 0rem 1rem;
+
+  }
+
+  .subContainer{
+    width: 20rem;
+    margin-right: 0px;
+    margin-left: 0px;
+    
+  }
+
+  .flex_form-container{
+    width: 20rem;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #17191c;
+    border: none;
+    margin-top: -6rem;
+    border-radius: 0px;
+  }
+
+  .container_question{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #17191c;
+    height: auto;
+    width: 20rem;
+
+  }
+
+  .form_p{
+    font-size: 1.3rem;
+    letter-spacing: 0.6px;
+    color: #f2f2f2;
+    text-align: center;
+    background-color: #17191c;
+    width: 70%;
+    margin-top: 3.5rem;
+  }
+
+  /* =========================== survey email_input ==================== */
+
+  .input_email{
+    margin-top: 1rem;
+    margin-bottom: 15px;
+    width: 80%;
+    background-color: #f2f2f2;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    filter: brightness(95%);
+    color:#4d4d4d;
+  }
+
+  .input_style{
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 80%;
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    color: #262626;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background-color: #f2f2f2;
+  }
+
+  .icon_placeholder{
+    margin-left: 10px;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #31b493;
+    background-color: #f2f2f2;
+  }
+
+  .button_div_survey{
+    display: flex;
+    background-color: #17191c;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button_cta{
+    padding: 0.3rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #f2f2f2;
+    border: 2px solid #217862;
+    background-color: #217862;
+    opacity: 0.95;
+    transition: all 0.2s;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-top: 1.5rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
+  }
+
+  .container_error{
+    margin: 10px 25px;
+      width: 80%;
+      height: 30px;
+      background-color: #17191c;
+  
+  }
+
+    /* =========================== fine survey email_input ==================== */
+
+    /* =========================== survey single_choise ========================*/
+
+    .flex_container-choice{
+      display: flex;
+      align-items: center;
+      height: auto;
+      background-color: #17191c;
+      width: 80%;
+      margin: 5% 0px;
+    }
+
+    .single_choice{
+      width: 30%;
+      height: 30%;
+      border-radius: 15px;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+      background: #23252b;
+      backdrop-filter: blur( 8.5px );
+      -webkit-backdrop-filter: blur( 8.5px );
+      border-radius: 10px;
+      border: 2px solid #2e3139;
+      box-shadow: 0px 0px 18px 4px rgba(69,73,83,0.6);
+      transition: .3s;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      /* margin-bottom: 10%; */
+    }
+
+    .single_choice-selected{
+      width: 30%;
+      height: 30%;
+      border-radius: 15px;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+      background: #23252b;
+      backdrop-filter: blur( 8.5px );
+      -webkit-backdrop-filter: blur( 8.5px );
+      border-radius: 10px;
+      border: 2px solid #2e3139;
+      box-shadow: 0px 0px 18px 4px #217862;
+      transition: .3s;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .single_choice-p{
+      display: none;
+    }
+
+    .single_choice-icon{
+      background-color: #23252b;
+      font-size: 1.9rem;
+      margin: 25%;
+      color: #f2f2f2;
+    }
+
+    .container_number-single_choise{
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      background-color: #17191c;
+      margin-top: -20%;
+    }
+
+    /* =========================== fine survey single_choise ========================*/
+
+    /* =========================== survey single_choise_sentence ========================*/
+
+    .flex_container-single_choice-sentence{
+      display: flex;
+      align-items: center;
+      background-color: #17191c;
+      flex-direction: column;
+      margin-bottom: 4rem;
+      width: 90%;
+    }
+
+    .radio_outer_container{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #17191c;
+      width: 100%;
+      margin-bottom: var(--mb-0-75);
+    }
+
+    .radio_space{
+      width: 5%;
+      background-color: #17191c;
+    }
+
+    .circle_container{
+      width: 100%;
+      background-color: #17191c;
+    }
+
+    .inner_circle{
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      border: 5px solid #17191c;
+      margin-right: 10px;
+    }
+  
+    
+    .inner_circle-focus{
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #217862;
+      border: 5px solid #217862;
+      }
+
+      .radio_container{
+        width: 70%;
+        background-color: #17191c;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: var(--normal-font-size);
+        color: #f2f2f2;
+        font-family: var(--body-font);
+        margin-left: 10%;
+        text-align: start;
+      }
+
+      
+  .radio_container-focus{
+    width: 70%;
+    background-color: #0D0E10;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: var(--normal-font-size);
+    color: #f2f2f2;
+    font-family: var(--body-font);
+    margin-left: 10%;
+    text-align: start;
+
+  }
+
+  .button_div_single_choise-sentence{
+    margin-top: 5%;
+    background-color: #17191c;
+  }
+
+  .button_cta_single_choise-sentence{
+    margin-top: -20%;
+  }
+
+
+  /* =========================== fine survey single_choise_sentence ========================*/
+  /* =========================== survey input_style-open_question ========================*/
+
+  .input_style-open_question{
+    background-color: #0D0E10;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 0px;
+    border-radius: 8px;
+    border: none;
+    color: #f2f2f2;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 5%;
+    resize: none;
+    width: 100%;
+    height: 8rem;
+  }
+
+  .container_question{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #17191c;
+    /* height: 20rem; */
+
+  }
+
+  .teminated_survey-icon{
+    background-color: #17191c;
+    font-size: 6rem;
+    color: #2da587;
+    margin-top: 5%;
+    margin-bottom: 30%;
+  }
+}
+
+@media screen and (max-width: 568px )and (min-width: 377px){
+  .survey{
+    margin: 4rem  0rem;
+    padding: 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .survey_container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+
+  .survey-text-container{
+    /* max-width: 500px; */
+    margin: 0rem 1rem;
+
+
+  }
+
+  .subContainer{
+    width: 20rem;
+    margin-right: 0px;
+    margin-left: 0px;
+
+  }
+
+  .flex_form-container{
+    width: 20rem;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #17191c;
+    border: none;
+    margin-top: .5rem;
+    border-radius: 15px;
+    border: 2px solid #17191c;
+  }
+
+  .container_question{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #17191c;
+    height: auto;
+    width: 20rem;
+
+  }
+
+  .form_p{
+    font-size: 1.3rem;
+    letter-spacing: 0.6px;
+    color: #f2f2f2;
+    text-align: center;
+    background-color: #17191c;
+    width: 70%;
+    margin-top: 3.5rem;
+  }
+
+  /* =========================== survey email_input ==================== */
+
+  .input_email{
+    margin-top: 1rem;
+    margin-bottom: 15px;
+    width: 80%;
+    background-color: #f2f2f2;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    filter: brightness(95%);
+    color:#4d4d4d;
+  }
+
+  .input_style{
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 80%;
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    color: #262626;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background-color: #f2f2f2;
+  }
+
+  .icon_placeholder{
+    margin-left: 10px;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #31b493;
+    background-color: #f2f2f2;
+  }
+
+  .button_div_survey{
+    display: flex;
+    background-color: #17191c;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button_cta{
+    padding: 0.3rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #f2f2f2;
+    border: 2px solid #217862;
+    background-color: #217862;
+    opacity: 0.95;
+    transition: all 0.2s;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-top: 1.5rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
+  }
+
+  .container_error{
+    margin: 10px 25px;
+      width: 80%;
+      height: 30px;
+      background-color: #17191c;
+  
+  }
+
+    /* =========================== fine survey email_input ==================== */
+
+    /* =========================== survey single_choise ========================*/
+
+    .flex_container-choice{
+      display: flex;
+      align-items: center;
+      height: auto;
+      background-color: #17191c;
+      width: 80%;
+      margin: 5% 0px;
+    }
+
+    .single_choice{
+      width: 30%;
+      height: 30%;
+      border-radius: 15px;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+      background: #23252b;
+      backdrop-filter: blur( 8.5px );
+      -webkit-backdrop-filter: blur( 8.5px );
+      border-radius: 10px;
+      border: 2px solid #2e3139;
+      box-shadow: 0px 0px 18px 4px rgba(69,73,83,0.6);
+      transition: .3s;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      /* margin-bottom: 10%; */
+    }
+
+    .single_choice-selected{
+      width: 30%;
+      height: 30%;
+      border-radius: 15px;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+      background: #23252b;
+      backdrop-filter: blur( 8.5px );
+      -webkit-backdrop-filter: blur( 8.5px );
+      border-radius: 10px;
+      border: 2px solid #2e3139;
+      box-shadow: 0px 0px 18px 4px #217862;
+      transition: .3s;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .single_choice-p{
+      display: none;
+    }
+
+    .single_choice-icon{
+      background-color: #23252b;
+      font-size: 1.9rem;
+      margin: 25%;
+      color: #f2f2f2;
+    }
+
+    .container_number-single_choise{
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      background-color: #17191c;
+      margin-top: -20%;
+    }
+
+    /* =========================== fine survey single_choise ========================*/
+
+    /* =========================== survey single_choise_sentence ========================*/
+
+    .flex_container-single_choice-sentence{
+      display: flex;
+      align-items: center;
+      background-color: #17191c;
+      flex-direction: column;
+      margin-bottom: 4rem;
+      width: 90%;
+    }
+
+    .radio_outer_container{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #17191c;
+      width: 100%;
+      margin-bottom: var(--mb-0-75);
+    }
+
+    .radio_space{
+      width: 5%;
+      background-color: #17191c;
+    }
+
+    .circle_container{
+      width: 100%;
+      background-color: #17191c;
+    }
+
+    .inner_circle{
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      border: 5px solid #17191c;
+      margin-right: 10px;
+    }
+  
+    
+    .inner_circle-focus{
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #217862;
+      border: 5px solid #217862;
+      }
+
+      .radio_container{
+        width: 70%;
+        background-color: #17191c;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: var(--normal-font-size);
+        color: #f2f2f2;
+        font-family: var(--body-font);
+        margin-left: 10%;
+        text-align: start;
+      }
+
+      
+  .radio_container-focus{
+    width: 70%;
+    background-color: #0D0E10;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: var(--normal-font-size);
+    color: #f2f2f2;
+    font-family: var(--body-font);
+    margin-left: 10%;
+    text-align: start;
+
+  }
+
+  .button_div_single_choise-sentence{
+    margin-top: 5%;
+    background-color: #17191c;
+  }
+
+  .button_cta_single_choise-sentence{
+    margin-top: -20%;
+  }
+
+
+  /* =========================== fine survey single_choise_sentence ========================*/
+  /* =========================== survey input_style-open_question ========================*/
+
+  .input_style-open_question{
+    background-color: #0D0E10;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 0px;
+    border-radius: 8px;
+    border: none;
+    color: #f2f2f2;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 5%;
+    resize: none;
+    width: 100%;
+    height: 8rem;
+  }
+
+    /* =========================== fine input_style-open_question ========================*/
+  /* =========================== survey finished_survey ========================*/
+
+
+  .container_question{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #17191c;
+    /* height: 20rem; */
+
+  }
+
+  .teminated_survey-icon{
+    background-color: #17191c;
+    font-size: 6rem;
+    color: #2da587;
+    margin-top: 5%;
+    margin-bottom: 30%;
+  }
+}
+
+@media screen and (min-width: 569px )and (max-width: 1024px){
+  .survey{
+    margin: 4rem  0rem;
+    padding: 4rem 0rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .survey-text-container{
+    max-width: 800px;
+    margin-right: 0rem;
+
+  }
+
+  .subContainer{
+    justify-items: center;
+    max-width: 800px;
+    margin-left: 0rem;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .survey{
+    padding: 1rem  2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .survey_subtitle{
+    font-size: 1.5rem;
+  }
+
+  .flex_container-single_choice-sentence{
+    display: flex;
+    align-items: center;
+    background-color: #17191c;
+    flex-direction: column;
+    margin-bottom: 4rem;
+
+  }
+
+  .input_style-open_question{
+    width:20rem;
+    height: 8rem;
+  }
+
+}
